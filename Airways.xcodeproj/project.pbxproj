@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9148614B22EF148900B39FB4 /* AWMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9148614922EF148900B39FB4 /* AWMapView.swift */; };
+		9148614C22EF148900B39FB4 /* AWMapViewLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9148614A22EF148900B39FB4 /* AWMapViewLayout.xib */; };
+		9148614E22EF14B800B39FB4 /* AWMapConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9148614D22EF14B800B39FB4 /* AWMapConfigurator.swift */; };
+		9148615022EF14C900B39FB4 /* AWMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9148614F22EF14C900B39FB4 /* AWMapPresenter.swift */; };
+		9148615222EF14D800B39FB4 /* AWMapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9148615122EF14D800B39FB4 /* AWMapRouter.swift */; };
+		919B58C622ED9653005DAEDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B58C522ED9653005DAEDD /* AppDelegate.swift */; };
+		919B58CD22ED9655005DAEDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919B58CC22ED9655005DAEDD /* Assets.xcassets */; };
+		919B58D022ED9655005DAEDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919B58CE22ED9655005DAEDD /* LaunchScreen.storyboard */; };
+		919B58D822EDA3A1005DAEDD /* PointView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919B58D722EDA3A1005DAEDD /* PointView.xib */; };
+		919B58DA22EDA4C1005DAEDD /* PointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B58D922EDA4C1005DAEDD /* PointView.swift */; };
+		919B595122EE7DAA005DAEDD /* AWGetAirportsByCountryRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B58E822EE7DAA005DAEDD /* AWGetAirportsByCountryRepositoryProtocol.swift */; };
+		919B595722EE7DAA005DAEDD /* AWGetAirportsByCountryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B58EF22EE7DAA005DAEDD /* AWGetAirportsByCountryUseCase.swift */; };
+		919B596722EE7DAA005DAEDD /* AWAirportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B590622EE7DAA005DAEDD /* AWAirportsView.swift */; };
+		919B596822EE7DAA005DAEDD /* AWAirportsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B590722EE7DAA005DAEDD /* AWAirportsPresenter.swift */; };
+		919B596922EE7DAA005DAEDD /* AWAirportsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B590822EE7DAA005DAEDD /* AWAirportsConfigurator.swift */; };
+		919B596A22EE7DAA005DAEDD /* AWAirportsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B590922EE7DAA005DAEDD /* AWAirportsRouter.swift */; };
+		919B596B22EE7DAA005DAEDD /* AWAirportsLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919B590A22EE7DAA005DAEDD /* AWAirportsLayout.xib */; };
+		919B596F22EE7DAA005DAEDD /* AWAirportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B591122EE7DAA005DAEDD /* AWAirportViewModel.swift */; };
+		919B597022EE7DAA005DAEDD /* AWAirportTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B591322EE7DAA005DAEDD /* AWAirportTableCell.swift */; };
+		919B597122EE7DAA005DAEDD /* AWAirportTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919B591422EE7DAA005DAEDD /* AWAirportTableCell.xib */; };
+		919B597222EE7DAA005DAEDD /* AWAirportsTableAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B591622EE7DAA005DAEDD /* AWAirportsTableAdapter.swift */; };
+		919B597C22EE7DAA005DAEDD /* AWExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B592522EE7DAA005DAEDD /* AWExecutor.swift */; };
+		919B597D22EE7DAA005DAEDD /* AWColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B592622EE7DAA005DAEDD /* AWColors.swift */; };
+		919B597F22EE7DAA005DAEDD /* AWNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B592822EE7DAA005DAEDD /* AWNavigationController.swift */; };
+		919B598C22EE7DAA005DAEDD /* AWAirportsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B593D22EE7DAA005DAEDD /* AWAirportsRepository.swift */; };
+		919B599422EE7DAA005DAEDD /* AWAirportNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B594622EE7DAA005DAEDD /* AWAirportNetworkModel.swift */; };
+		919B599A22EE7E73005DAEDD /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B599822EE7E73005DAEDD /* UIView.swift */; };
+		919B599E22EE8382005DAEDD /* AWAirportDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B599D22EE8382005DAEDD /* AWAirportDomainModel.swift */; };
+		919B59A022EE876C005DAEDD /* AWNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B599F22EE876C005DAEDD /* AWNetworkService.swift */; };
+		919B59A222EE87AA005DAEDD /* AWNetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B59A122EE87AA005DAEDD /* AWNetworkServiceProtocol.swift */; };
+		919B59A422EE89F4005DAEDD /* AWStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B59A322EE89F4005DAEDD /* AWStrings.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9148614922EF148900B39FB4 /* AWMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWMapView.swift; sourceTree = "<group>"; };
+		9148614A22EF148900B39FB4 /* AWMapViewLayout.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AWMapViewLayout.xib; sourceTree = "<group>"; };
+		9148614D22EF14B800B39FB4 /* AWMapConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWMapConfigurator.swift; sourceTree = "<group>"; };
+		9148614F22EF14C900B39FB4 /* AWMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWMapPresenter.swift; sourceTree = "<group>"; };
+		9148615122EF14D800B39FB4 /* AWMapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWMapRouter.swift; sourceTree = "<group>"; };
+		919B58C222ED9653005DAEDD /* Airways.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airways.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		919B58C522ED9653005DAEDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		919B58CC22ED9655005DAEDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		919B58CF22ED9655005DAEDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		919B58D122ED9655005DAEDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		919B58D722EDA3A1005DAEDD /* PointView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PointView.xib; sourceTree = "<group>"; };
+		919B58D922EDA4C1005DAEDD /* PointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointView.swift; sourceTree = "<group>"; };
+		919B58E822EE7DAA005DAEDD /* AWGetAirportsByCountryRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWGetAirportsByCountryRepositoryProtocol.swift; sourceTree = "<group>"; };
+		919B58EF22EE7DAA005DAEDD /* AWGetAirportsByCountryUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWGetAirportsByCountryUseCase.swift; sourceTree = "<group>"; };
+		919B590622EE7DAA005DAEDD /* AWAirportsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWAirportsView.swift; sourceTree = "<group>"; };
+		919B590722EE7DAA005DAEDD /* AWAirportsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWAirportsPresenter.swift; sourceTree = "<group>"; };
+		919B590822EE7DAA005DAEDD /* AWAirportsConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWAirportsConfigurator.swift; sourceTree = "<group>"; };
+		919B590922EE7DAA005DAEDD /* AWAirportsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWAirportsRouter.swift; sourceTree = "<group>"; };
+		919B590A22EE7DAA005DAEDD /* AWAirportsLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AWAirportsLayout.xib; sourceTree = "<group>"; };
+		919B591122EE7DAA005DAEDD /* AWAirportViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWAirportViewModel.swift; sourceTree = "<group>"; };
+		919B591322EE7DAA005DAEDD /* AWAirportTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWAirportTableCell.swift; sourceTree = "<group>"; };
+		919B591422EE7DAA005DAEDD /* AWAirportTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AWAirportTableCell.xib; sourceTree = "<group>"; };
+		919B591622EE7DAA005DAEDD /* AWAirportsTableAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWAirportsTableAdapter.swift; sourceTree = "<group>"; };
+		919B592522EE7DAA005DAEDD /* AWExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWExecutor.swift; sourceTree = "<group>"; };
+		919B592622EE7DAA005DAEDD /* AWColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWColors.swift; sourceTree = "<group>"; };
+		919B592822EE7DAA005DAEDD /* AWNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWNavigationController.swift; sourceTree = "<group>"; };
+		919B593D22EE7DAA005DAEDD /* AWAirportsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWAirportsRepository.swift; sourceTree = "<group>"; };
+		919B594622EE7DAA005DAEDD /* AWAirportNetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWAirportNetworkModel.swift; sourceTree = "<group>"; };
+		919B599822EE7E73005DAEDD /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		919B599D22EE8382005DAEDD /* AWAirportDomainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWAirportDomainModel.swift; sourceTree = "<group>"; };
+		919B599F22EE876C005DAEDD /* AWNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWNetworkService.swift; sourceTree = "<group>"; };
+		919B59A122EE87AA005DAEDD /* AWNetworkServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWNetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		919B59A322EE89F4005DAEDD /* AWStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWStrings.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		919B58BF22ED9653005DAEDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9148615322EF172F00B39FB4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9148615422EF173D00B39FB4 /* CiteMapPoint */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9148615422EF173D00B39FB4 /* CiteMapPoint */ = {
+			isa = PBXGroup;
+			children = (
+				919B58D722EDA3A1005DAEDD /* PointView.xib */,
+				919B58D922EDA4C1005DAEDD /* PointView.swift */,
+			);
+			path = CiteMapPoint;
+			sourceTree = "<group>";
+		};
+		919B58B922ED9653005DAEDD = {
+			isa = PBXGroup;
+			children = (
+				919B58C422ED9653005DAEDD /* Airways */,
+				919B58C322ED9653005DAEDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		919B58C322ED9653005DAEDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				919B58C222ED9653005DAEDD /* Airways.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		919B58C422ED9653005DAEDD /* Airways */ = {
+			isa = PBXGroup;
+			children = (
+				919B58F522EE7DAA005DAEDD /* Presentation */,
+				919B58DF22EE7DAA005DAEDD /* Domain */,
+				919B593822EE7DAA005DAEDD /* Data */,
+				919B58C522ED9653005DAEDD /* AppDelegate.swift */,
+				919B58CC22ED9655005DAEDD /* Assets.xcassets */,
+				919B58CE22ED9655005DAEDD /* LaunchScreen.storyboard */,
+				919B58D122ED9655005DAEDD /* Info.plist */,
+			);
+			path = Airways;
+			sourceTree = "<group>";
+		};
+		919B58DF22EE7DAA005DAEDD /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				919B58E022EE7DAA005DAEDD /* DomainModels */,
+				919B58E722EE7DAA005DAEDD /* RepositoriesProtocols */,
+				919B58EE22EE7DAA005DAEDD /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		919B58E022EE7DAA005DAEDD /* DomainModels */ = {
+			isa = PBXGroup;
+			children = (
+				919B599D22EE8382005DAEDD /* AWAirportDomainModel.swift */,
+			);
+			path = DomainModels;
+			sourceTree = "<group>";
+		};
+		919B58E722EE7DAA005DAEDD /* RepositoriesProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				919B58E822EE7DAA005DAEDD /* AWGetAirportsByCountryRepositoryProtocol.swift */,
+			);
+			path = RepositoriesProtocols;
+			sourceTree = "<group>";
+		};
+		919B58EE22EE7DAA005DAEDD /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				919B58EF22EE7DAA005DAEDD /* AWGetAirportsByCountryUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		919B58F522EE7DAA005DAEDD /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				919B592422EE7DAA005DAEDD /* Generic */,
+				919B599722EE7E73005DAEDD /* Extensions */,
+				919B590522EE7DAA005DAEDD /* AirportsScene */,
+				919B599C22EE7F53005DAEDD /* MapScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		919B590522EE7DAA005DAEDD /* AirportsScene */ = {
+			isa = PBXGroup;
+			children = (
+				919B590B22EE7DAA005DAEDD /* Helpers */,
+				919B590622EE7DAA005DAEDD /* AWAirportsView.swift */,
+				919B590722EE7DAA005DAEDD /* AWAirportsPresenter.swift */,
+				919B590822EE7DAA005DAEDD /* AWAirportsConfigurator.swift */,
+				919B590922EE7DAA005DAEDD /* AWAirportsRouter.swift */,
+				919B590A22EE7DAA005DAEDD /* AWAirportsLayout.xib */,
+			);
+			path = AirportsScene;
+			sourceTree = "<group>";
+		};
+		919B590B22EE7DAA005DAEDD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				919B590F22EE7DAA005DAEDD /* ViewModels */,
+				919B591222EE7DAA005DAEDD /* AirportTableCell */,
+				919B591522EE7DAA005DAEDD /* Adapters */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		919B590F22EE7DAA005DAEDD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				919B591122EE7DAA005DAEDD /* AWAirportViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		919B591222EE7DAA005DAEDD /* AirportTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				919B591322EE7DAA005DAEDD /* AWAirportTableCell.swift */,
+				919B591422EE7DAA005DAEDD /* AWAirportTableCell.xib */,
+			);
+			path = AirportTableCell;
+			sourceTree = "<group>";
+		};
+		919B591522EE7DAA005DAEDD /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				919B591622EE7DAA005DAEDD /* AWAirportsTableAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		919B592422EE7DAA005DAEDD /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				919B59A322EE89F4005DAEDD /* AWStrings.swift */,
+				919B592522EE7DAA005DAEDD /* AWExecutor.swift */,
+				919B592622EE7DAA005DAEDD /* AWColors.swift */,
+				919B592822EE7DAA005DAEDD /* AWNavigationController.swift */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		919B593822EE7DAA005DAEDD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				919B593922EE7DAA005DAEDD /* ServiceProtocols */,
+				919B593B22EE7DAA005DAEDD /* Repositories */,
+				919B593F22EE7DAA005DAEDD /* NetworkModels */,
+				919B594922EE7DAA005DAEDD /* Services */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		919B593922EE7DAA005DAEDD /* ServiceProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				919B59A122EE87AA005DAEDD /* AWNetworkServiceProtocol.swift */,
+			);
+			path = ServiceProtocols;
+			sourceTree = "<group>";
+		};
+		919B593B22EE7DAA005DAEDD /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				919B593D22EE7DAA005DAEDD /* AWAirportsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		919B593F22EE7DAA005DAEDD /* NetworkModels */ = {
+			isa = PBXGroup;
+			children = (
+				919B594622EE7DAA005DAEDD /* AWAirportNetworkModel.swift */,
+			);
+			path = NetworkModels;
+			sourceTree = "<group>";
+		};
+		919B594922EE7DAA005DAEDD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				919B599F22EE876C005DAEDD /* AWNetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		919B599722EE7E73005DAEDD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				919B599822EE7E73005DAEDD /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		919B599C22EE7F53005DAEDD /* MapScene */ = {
+			isa = PBXGroup;
+			children = (
+				9148615322EF172F00B39FB4 /* Helpers */,
+				9148614922EF148900B39FB4 /* AWMapView.swift */,
+				9148614A22EF148900B39FB4 /* AWMapViewLayout.xib */,
+				9148614D22EF14B800B39FB4 /* AWMapConfigurator.swift */,
+				9148614F22EF14C900B39FB4 /* AWMapPresenter.swift */,
+				9148615122EF14D800B39FB4 /* AWMapRouter.swift */,
+			);
+			path = MapScene;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		919B58C122ED9653005DAEDD /* Airways */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919B58D422ED9655005DAEDD /* Build configuration list for PBXNativeTarget "Airways" */;
+			buildPhases = (
+				919B58BE22ED9653005DAEDD /* Sources */,
+				919B58BF22ED9653005DAEDD /* Frameworks */,
+				919B58C022ED9653005DAEDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Airways;
+			productName = Airways;
+			productReference = 919B58C222ED9653005DAEDD /* Airways.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		919B58BA22ED9653005DAEDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = HARMAN;
+				TargetAttributes = {
+					919B58C122ED9653005DAEDD = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 919B58BD22ED9653005DAEDD /* Build configuration list for PBXProject "Airways" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 919B58B922ED9653005DAEDD;
+			productRefGroup = 919B58C322ED9653005DAEDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				919B58C122ED9653005DAEDD /* Airways */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		919B58C022ED9653005DAEDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919B58D022ED9655005DAEDD /* LaunchScreen.storyboard in Resources */,
+				919B597122EE7DAA005DAEDD /* AWAirportTableCell.xib in Resources */,
+				919B596B22EE7DAA005DAEDD /* AWAirportsLayout.xib in Resources */,
+				9148614C22EF148900B39FB4 /* AWMapViewLayout.xib in Resources */,
+				919B58CD22ED9655005DAEDD /* Assets.xcassets in Resources */,
+				919B58D822EDA3A1005DAEDD /* PointView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		919B58BE22ED9653005DAEDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919B596822EE7DAA005DAEDD /* AWAirportsPresenter.swift in Sources */,
+				919B599A22EE7E73005DAEDD /* UIView.swift in Sources */,
+				919B596722EE7DAA005DAEDD /* AWAirportsView.swift in Sources */,
+				919B597C22EE7DAA005DAEDD /* AWExecutor.swift in Sources */,
+				919B596F22EE7DAA005DAEDD /* AWAirportViewModel.swift in Sources */,
+				919B59A222EE87AA005DAEDD /* AWNetworkServiceProtocol.swift in Sources */,
+				919B59A022EE876C005DAEDD /* AWNetworkService.swift in Sources */,
+				919B596922EE7DAA005DAEDD /* AWAirportsConfigurator.swift in Sources */,
+				919B596A22EE7DAA005DAEDD /* AWAirportsRouter.swift in Sources */,
+				9148614E22EF14B800B39FB4 /* AWMapConfigurator.swift in Sources */,
+				9148615022EF14C900B39FB4 /* AWMapPresenter.swift in Sources */,
+				919B599422EE7DAA005DAEDD /* AWAirportNetworkModel.swift in Sources */,
+				919B595122EE7DAA005DAEDD /* AWGetAirportsByCountryRepositoryProtocol.swift in Sources */,
+				9148615222EF14D800B39FB4 /* AWMapRouter.swift in Sources */,
+				919B597022EE7DAA005DAEDD /* AWAirportTableCell.swift in Sources */,
+				919B597222EE7DAA005DAEDD /* AWAirportsTableAdapter.swift in Sources */,
+				919B595722EE7DAA005DAEDD /* AWGetAirportsByCountryUseCase.swift in Sources */,
+				919B597D22EE7DAA005DAEDD /* AWColors.swift in Sources */,
+				919B58DA22EDA4C1005DAEDD /* PointView.swift in Sources */,
+				919B598C22EE7DAA005DAEDD /* AWAirportsRepository.swift in Sources */,
+				919B59A422EE89F4005DAEDD /* AWStrings.swift in Sources */,
+				9148614B22EF148900B39FB4 /* AWMapView.swift in Sources */,
+				919B597F22EE7DAA005DAEDD /* AWNavigationController.swift in Sources */,
+				919B599E22EE8382005DAEDD /* AWAirportDomainModel.swift in Sources */,
+				919B58C622ED9653005DAEDD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		919B58CE22ED9655005DAEDD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				919B58CF22ED9655005DAEDD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		919B58D222ED9655005DAEDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		919B58D322ED9655005DAEDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		919B58D522ED9655005DAEDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 84DMLXTAK2;
+				INFOPLIST_FILE = Airways/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dave.Airways;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Dave's Development Profile";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		919B58D622ED9655005DAEDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Airways/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dave.Airways;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		919B58BD22ED9653005DAEDD /* Build configuration list for PBXProject "Airways" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919B58D222ED9655005DAEDD /* Debug */,
+				919B58D322ED9655005DAEDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919B58D422ED9655005DAEDD /* Build configuration list for PBXNativeTarget "Airways" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919B58D522ED9655005DAEDD /* Debug */,
+				919B58D622ED9655005DAEDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 919B58BA22ED9653005DAEDD /* Project object */;
+}
